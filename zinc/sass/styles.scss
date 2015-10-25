@@ -1,0 +1,178 @@
+// Import Bootstrap Compass integration
+@import "bootstrap-compass";
+
+// Import custom Bootstrap variables
+@import "bootstrap-variables";
+
+// Import Bootstrap for Sass
+@import "bootstrap";
+
+$theme-color-main:   #486b00;
+$theme-color-sub1:   #2e4600;
+$theme-color-sub2:   #a2c523;
+$theme-color-accent: #7d4427;
+
+body {
+    margin-top: 90px;
+    background-color: $navbar-default-bg;
+}
+p {
+    text-align:justify;
+}
+a:hover {
+    text-decoration: none;
+}
+.main-column {
+  background-color:#fff;
+  padding-top:20px;
+}
+.sub-column {
+    padding-top: 10px;
+}
+
+// [START] nav
+nav.navbar-fixed-top {
+    border: none;
+}
+nav.navbar-fixed-top ul.navbar-nav > li > a {
+    font-size: 92%;
+    height: 50px;
+}
+nav.navbar-fixed-top ul.nav-pills > li > a {
+    border-radius: 0;
+    color: #fff;
+    padding: 6px 10px;
+}
+nav.navbar-fixed-top .navbar-right {
+    margin-right: 0;
+}
+nav.navbar-fixed-top .navbar-collapse .navbar-form {
+    border: none;
+    margin: 0;
+    padding: 8px 0px;
+}
+nav.navbar-fixed-top>.container>.navbar-header>a.navbar-brand,
+nav.navbar-fixed-top>.container-fluid>.navbar-header>a.navbar-brand {
+    padding: 0;
+}
+nav.navbar-fixed-top > .container > .navbar-header,
+nav.navbar-fixed-top > .container > .navbar-collapse,
+nav.navbar-fixed-top > .container-fluid > .navbar-header,
+nav.navbar-fixed-top > .container-fluid > .navbar-collapse {
+  margin-left: floor($grid-gutter-width / -2 );
+  margin-right: floor($grid-gutter-width / -2 );
+}
+nav.navbar-fixed-top .link-header {
+    background-color: $theme-color-main;
+}
+nav.navbar-fixed-top .link-header li a:hover{
+    background-color: $theme-color-sub1;
+}
+nav.navbar-fixed-top .link-header li.active a{
+    background-color: $theme-color-accent;
+}
+nav.navbar-fixed-top .link-header li.active a:hover{
+    background-color: $theme-color-accent;
+}
+nav.navbar-fixed-top .link-header li {
+    margin-left: 0;
+}
+// [END] navbar
+
+
+.form-control {
+    box-shadow: none;
+}
+.mgb {
+    margin-bottom: 20px;
+}
+.ad {
+    text-align: center;
+}
+.arrow_box {
+    position: relative;
+    background: #efefef;
+    border: 2px solid #ddd;
+    padding: 5px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+.arrow_box:after,
+.arrow_box:before {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+.arrow_box:after {
+    border-color: rgba(239, 239, 239, 0);
+    border-top-color: #efefef;
+    border-width: 30px;
+    margin-left: -30px;
+}
+.arrow_box:before {
+    border-color: rgba(221, 221, 221, 0);
+    border-top-color: #ddd;
+    border-width: 33px;
+    margin-left: -33px;
+}
+
+ol.rnk {
+    list-style-type:none;
+    line-height: 1.3;
+    font-size: 90%;
+    padding:0;
+}
+ol.rnk .rnk-num {
+    display:block;
+    float: left;
+    width: 30px;
+    text-align:center;
+    font-family:Arial,Helvetica,sans-serif;
+    font-size:125%;
+    font-weight:bold;
+    color:#333;
+    font-style:italic;
+}
+ol.rnk .media {
+    margin: 8px 0;
+    border-bottom: 1px solid #ddd;
+}
+ol.rnk .media-body div {
+    padding-bottom: 2px;
+}
+ol.rnk .date {
+    color: #666;
+    font-size: 90%;
+}
+ol.rnk .name {
+    color: #666;
+    font-size: 90%;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+    margin: 0 0 0.67em 0;
+    font-size: 24px;
+}
+.media {
+    margin-top: 0;
+}
+
+// 画面サイズがスマフォ向けCSS設定
+@media (max-width: $screen-xs-max) {
+    body {
+        margin-top: 50px;
+    }
+    .navbar-collapse .navbar-form {
+        padding: 8px 10px;
+    }
+}
