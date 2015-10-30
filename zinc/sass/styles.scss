@@ -31,56 +31,58 @@ a:hover {
 .sub-column {
     padding-top: 10px;
 }
-
-// [START] nav
 .navbar-default {
     border: none;
 }
-nav.navbar-fixed-top ul.navbar-nav > li > a {
-    font-size: 92%;
-    height: 50px;
-}
-nav.navbar-fixed-top ul.nav-pills > li > a {
-    border-radius: 0;
-    color: #fff;
-    padding: 6px 10px;
-}
-nav.navbar-fixed-top .navbar-right {
-    margin-right: 0;
-}
-nav.navbar-fixed-top .navbar-collapse .navbar-form {
-    border: none;
-    margin: 0;
-    padding: 8px 0px;
-}
-nav.navbar-fixed-top>.container>.navbar-header>a.navbar-brand,
-nav.navbar-fixed-top>.container-fluid>.navbar-header>a.navbar-brand {
-    padding: 0;
-}
-nav.navbar-fixed-top > .container > .navbar-header,
-nav.navbar-fixed-top > .container > .navbar-collapse,
-nav.navbar-fixed-top > .container-fluid > .navbar-header,
-nav.navbar-fixed-top > .container-fluid > .navbar-collapse {
-  margin-left: floor($grid-gutter-width / -2 );
-  margin-right: floor($grid-gutter-width / -2 );
-}
-nav.navbar-fixed-top .link-header {
-    background-color: $theme-color-main;
-}
-nav.navbar-fixed-top .link-header li a:hover{
-    background-color: $theme-color-sub1;
-}
-nav.navbar-fixed-top .link-header li.active a{
-    background-color: $theme-color-accent;
-}
-nav.navbar-fixed-top .link-header li.active a:hover{
-    background-color: $theme-color-accent;
-}
-nav.navbar-fixed-top .link-header li {
-    margin-left: 0;
-}
-// [END] navbar
 
+nav.navbar-fixed-top {
+    // 全行共通
+    .navbar-right {
+        margin-right: 0;
+    }
+    .container > .navbar-header,
+    .container > .navbar-collapse {
+        margin-left: floor($grid-gutter-width / -2 );
+        margin-right: floor($grid-gutter-width / -2 );
+    }
+
+    // 1行目nav
+    ul.navbar-nav {
+        font-size: 92%;
+        height: 50px;
+
+        .navbar-form {
+            border: none;
+            margin: 0;
+            padding: 8px 0px;
+        }
+    }
+    // 2行目nav
+    .link-header {
+        background-color: $theme-color-main;
+
+        a {
+            border-radius: 0;
+            color: #fff;
+            padding: 6px 10px;
+        }
+
+        li {
+            margin-left: 0;
+            a:hover {
+                background-color: $theme-color-sub1;
+            }
+        }
+        li.active {
+            a {
+                background-color: $theme-color-accent;
+            }
+            a:hover{
+                background-color: $theme-color-accent;
+            }
+        }
+    }
+}
 
 .form-control {
     box-shadow: none;
