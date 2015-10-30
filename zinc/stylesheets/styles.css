@@ -8799,7 +8799,7 @@ a:hover {
 }
 
 /* line 36, ../sass/styles.scss */
-nav.navbar-fixed-top {
+.navbar-default {
   border: none;
 }
 
@@ -8982,13 +8982,46 @@ h6, .h6 {
   margin-top: 0;
 }
 
+/* line 171, ../sass/styles.scss */
+.panel {
+  box-shadow: none;
+  border-radius: 0;
+  margin-top: 10px;
+}
+
+/* line 176, ../sass/styles.scss */
+.panel-body h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+/* line 180, ../sass/styles.scss */
+.panel-body {
+  padding: 6px;
+}
+/* line 183, ../sass/styles.scss */
+.panel-body p {
+  line-height: 1.4;
+}
+/* line 187, ../sass/styles.scss */
+.panel-body h2 {
+  margin: 0;
+}
+
+/* line 191, ../sass/styles.scss */
+.thumbnail {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
 @media (max-width: 767px) {
-  /* line 174, ../sass/styles.scss */
+  /* line 199, ../sass/styles.scss */
   body {
     margin-top: 50px;
   }
 
-  /* line 177, ../sass/styles.scss */
+  /* line 202, ../sass/styles.scss */
   .navbar-collapse .navbar-form {
     padding: 8px 10px;
   }
