@@ -126,34 +126,40 @@ nav.navbar-fixed-top .link-header li {
 ol.rnk {
     list-style-type:none;
     line-height: 1.3;
-    font-size: 90%;
+    font-size: 95%;
     padding:0;
-}
-ol.rnk .rnk-num {
-    display:block;
-    float: left;
-    width: 30px;
-    text-align:center;
-    font-family:Arial,Helvetica,sans-serif;
-    font-size:125%;
-    font-weight:bold;
-    color:#333;
-    font-style:italic;
-}
-ol.rnk .media {
-    margin: 8px 0;
-    border-bottom: 1px solid #ddd;
-}
-ol.rnk .media-body div {
-    padding-bottom: 2px;
-}
-ol.rnk .date {
-    color: #666;
-    font-size: 90%;
-}
-ol.rnk .name {
-    color: #666;
-    font-size: 90%;
+
+    .rnk-num {
+        display:block;
+        float: left;
+        width: 30px;
+        text-align:center;
+        font-family:Arial,Helvetica,sans-serif;
+        font-size:125%;
+        font-weight:bold;
+        color:#333;
+        font-style:italic;
+    }
+
+    .media {
+        margin: 8px 0;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 8px;
+    }
+
+    .media-body div {
+        padding-bottom: 2px;
+    }
+
+    .date {
+        color: #666;
+        font-size: 90%;
+    }
+
+    .name {
+        color: #666;
+        font-size: 90%;
+    }
 }
 
 h1, .h1,
@@ -169,16 +175,19 @@ h6, .h6 {
     margin-top: 0;
 }
 .panel {
-    box-shadow:none;
-    border-radius:0;
+    box-shadow: none;
+    border-radius: 0;
     margin-top: 10px;
+}
+.panel-default {
+    border-color: #ccc;
 }
 .panel-body h2 {
     margin: 0;
     font-size: 18px;
 }
 .panel-body {
-    padding: 6px;
+    padding: 10px;
 
     p {
         line-height: 1.4;
@@ -190,8 +199,8 @@ h6, .h6 {
 }
 .thumbnail {
     border: none;
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0;
 }
 
 // 画面サイズがスマフォ向けCSS設定
