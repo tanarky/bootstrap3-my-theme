@@ -53,7 +53,7 @@ nav.navbar-fixed-top {
 
         .navbar-form {
             border: none;
-            margin: 0;
+            margin: 0 0 0 10px;
             padding: 8px 0px;
         }
     }
@@ -74,10 +74,7 @@ nav.navbar-fixed-top {
             }
         }
         li.active {
-            a {
-                background-color: $theme-color-accent;
-            }
-            a:hover{
+            a, a:hover{
                 background-color: $theme-color-accent;
             }
         }
