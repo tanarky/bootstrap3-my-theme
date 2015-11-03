@@ -35,7 +35,7 @@ a:hover {
     border: none;
 }
 
-nav.navbar-fixed-top {
+nav {
     // 全行共通
     .navbar-right {
         margin-right: 0;
@@ -58,7 +58,7 @@ nav.navbar-fixed-top {
         }
     }
     // 2行目nav
-    .link-header {
+    .link-menu {
         background-color: $theme-color-main;
 
         a {
