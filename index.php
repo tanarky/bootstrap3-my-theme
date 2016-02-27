@@ -5,7 +5,7 @@
     <title>Bootswatch: Flatly</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="stylesheet" href="./zinc/stylesheets/styles.css" media="screen">
+    <link rel="stylesheet" href="./<?php echo empty($_GET['name']) ? "flatly" : $_GET['name'];?>/stylesheets/styles.css" media="screen">
     <link rel="stylesheet" href="./custom.min.css" media="screen">
   </head>
   <body>
@@ -82,8 +82,7 @@
       <div class="page-header" id="banner">
         <div class="row">
           <div class="col-lg-8 col-md-7 col-sm-6">
-            <h1>Flatly</h1>
-            <p class="lead">Flat and modern</p>
+            <h1><?php echo empty($_GET['name']) ? "flatly" : $_GET['name'];?></h1>
           </div>
         </div>
         <div class="row">
@@ -1269,7 +1268,7 @@
     </div>
 
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="zinc/javascripts/bootstrap.min.js"></script>
+    <script src="./<?php echo empty($_GET['name']) ? 'flatly' : $_GET['name'];?>/javascripts/bootstrap.min.js"></script>
     <script src="./custom.js"></script>
   </body>
 </html>
